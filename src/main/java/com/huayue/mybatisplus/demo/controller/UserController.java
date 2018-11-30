@@ -49,6 +49,8 @@ public class UserController {
 
         User shiroUser = ShiroFactory.getShiroUser();
 
+        boolean is = ShiroFactory.hasRole("admin");
+
         return "index";
     }
 

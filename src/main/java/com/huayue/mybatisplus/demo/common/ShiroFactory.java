@@ -13,4 +13,8 @@ public class ShiroFactory {
         return (User) SecurityUtils.getSubject().getPrincipal();
     }
 
+    public static boolean hasRole (String role) {
+        return SecurityUtils.getSubject().hasRole(role);
+    }
+
 }
