@@ -18,8 +18,8 @@ import java.io.Serializable;
 @Setter
 @TableName("tb_user")
 public class User extends Model<User> implements Serializable {
-    @TableId(value = "user_id", type = IdType.UUID)
-    private String userId;
+    @TableId(value = "user_id")
+    private int userId;
     private String userName;
     @TableField("user_password")
     private String userPassword;
