@@ -41,6 +41,7 @@ public class ShiroConfig {
         Map<String,String> map = new HashMap<String, String>();
         //登出
         map.put("/logout","logout");
+        map.put("/getOpenid", "anon");
         //对所有用户认证
         map.put("/**","authc");
         //登录

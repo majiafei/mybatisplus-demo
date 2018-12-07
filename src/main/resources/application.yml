@@ -4,6 +4,8 @@ spring:
     url: jdbc:mysql://localhost:3306/test?useSSL=true
     username: root
     password: 1111
+
+#输出日志
 mybatis-plus:
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
